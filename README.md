@@ -11,8 +11,9 @@
    mkdir DockerWebApp
 
 Navigate to the directory 
-   cd DockerWebApp
-
+ ``` 
+  cd DockerWebApp
+```
 3. Create index.html file
 ```
 <!DOCTYPE html>
