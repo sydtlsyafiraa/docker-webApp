@@ -1,12 +1,12 @@
-#Dockerize Web Application
+# Dockerize Web Application
 
 ## Steps in dockerize web application
 
 1. Make sure these are install in your machine
-
+```
    apt install docker.io -y
    systemctl start docker
-
+```
 2. Create a directory
    mkdir DockerWebApp
 
@@ -14,6 +14,7 @@ Navigate to the directory
    cd DockerWebApp
 
 3. Create index.html file
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,10 +24,10 @@ Navigate to the directory
     <h1>Hi, welcome to my web!</h1>
 </body>
 </html> 
-
+```
 4. Create Dockerfile 
     nano Dockerfile
-
+```
 FROM nginx:latest
 
 # Copy the application files to the appropriate location in the container
@@ -37,11 +38,12 @@ EXPOSE 80
 
 # Start Nginx when the container launches
 CMD ["nginx", "-g", "daemon off;"]
+```
 
 5. Create Docker Compose file
  nano docker-compose.yml
 
-
+```
 version: '3'
 services:
   web:
@@ -57,8 +59,9 @@ services:
         limits:
           cpus: '0.5'
           memory: '512M'
+  ```
 6. Build and run docker container
-
+```
  docker-compose up -d
-
-5. web app can be access at http://178.128.82.116:8080/
+```
+7. web app can be access at http://178.128.82.116:8080/
