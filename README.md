@@ -1,4 +1,6 @@
-Dockerize Web Application
+#Dockerize Web Application
+
+## Steps in dockerize web application
 
 1. Make sure these are install in your machine
 
@@ -6,8 +8,8 @@ apt install docker.io -y
 systemctl start docker
 
 2. Create a directory
- root@syafira2:~# mkdir DockerWebApp
- root@syafira2:~# cd DockerWebApp
+mkdir DockerWebApp
+cd DockerWebApp
 
 3. Create index.html file
 <!DOCTYPE html>
