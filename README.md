@@ -8,8 +8,9 @@
    systemctl start docker
 ```
 2. Create a directory
+```
    mkdir DockerWebApp
-
+```
 Navigate to the directory 
  ``` 
   cd DockerWebApp
