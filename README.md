@@ -4,12 +4,14 @@
 
 1. Make sure these are install in your machine
 
-apt install docker.io -y
-systemctl start docker
+   apt install docker.io -y
+   systemctl start docker
 
 2. Create a directory
-mkdir DockerWebApp
-cd DockerWebApp
+   mkdir DockerWebApp
+
+Navigate to the directory 
+   cd DockerWebApp
 
 3. Create index.html file
 <!DOCTYPE html>
@@ -23,7 +25,7 @@ cd DockerWebApp
 </html> 
 
 4. Create Dockerfile 
-root@syafira2:~/DockerWebApp# nano Dockerfile
+    nano Dockerfile
 
 FROM nginx:latest
 
@@ -37,7 +39,7 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
 5. Create Docker Compose file
-root@syafira2:~/DockerWebApp# nano docker-compose.yml
+ nano docker-compose.yml
 
 
 version: '3'
